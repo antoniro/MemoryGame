@@ -4,7 +4,7 @@ class Reward
 public:
 	Reward();
 	~Reward();
-	operator int();
+	operator int() const;
 
 private:
 	int _nRubies;

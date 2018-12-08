@@ -11,6 +11,7 @@ class Player
 {
 public:
 	Player(std::string name);
+	Player(std::string name, Side side);
 	~Player();
 	std::string getName() const;
 	void setActive(bool value);
@@ -27,4 +28,6 @@ private:
 	Side _side;
 	int _nRubies;
 	bool _isActive;
+	bool _endOfGameDisplay;
+	static std::string sideToString(Side side);
 };

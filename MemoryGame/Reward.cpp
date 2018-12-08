@@ -10,3 +10,8 @@ Reward::Reward()
 Reward::~Reward()
 {
 }
+
+Reward::operator int()
+{
+	return _nRubies;
+}
