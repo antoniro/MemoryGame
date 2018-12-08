@@ -11,7 +11,7 @@ Reward::~Reward()
 {
 }
 
-Reward::operator int()
+Reward::operator int() const
 {
 	return _nRubies;
 }
