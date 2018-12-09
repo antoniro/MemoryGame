@@ -1,12 +1,18 @@
 #pragma once
+
+#include <iostream>
+
+enum class RubyAmount { One, Two, Three, Four };
+
 class Reward
 {
 public:
-	Reward();
-	~Reward();
 	operator int() const;
+	friend std::ostream & operator << (std::ostream & out, Reward const & reward);
 
 private:
-	int _nRubies;
+	friend class RewardDeck;
+	Reward(RubyAmount amount);
+	RubyAmount _nRubies;
 };
 
