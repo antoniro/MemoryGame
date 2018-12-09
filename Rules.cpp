@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "Rules.h"
 
 bool isValid(const Game& game){
     if(game.getPreviousCard() == game.getCurrentCard()){

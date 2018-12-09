@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Game.h"
 
 class Rules{
 private:
