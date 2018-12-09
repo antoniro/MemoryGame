@@ -13,6 +13,8 @@ public:
 	std::string operator () (int row) const;
 	operator FaceAnimal() const;
 	operator FaceBackground() const;
+	Card(Card const &) = delete;		// Prevent copies
+	Card & operator = (Card const &) = delete;		// Prevent assignment
 
 private:
 	friend class CardDeck;
