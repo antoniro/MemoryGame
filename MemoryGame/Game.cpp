@@ -1,7 +1,5 @@
 #include <iostream>
 #include "Game.h"
-#include "Board.h"
-
 
 Game::Game(Players players[], Board board){
     round = 0;
