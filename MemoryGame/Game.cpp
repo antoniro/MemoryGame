@@ -1,8 +1,6 @@
 #include <iostream>
 #include "Game.h"
 
-
-
 Game::Game(Players players[], Board board){
     round = 0;
     previousCard = nullptr;
