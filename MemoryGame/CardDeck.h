@@ -7,8 +7,10 @@
 class CardDeck : public Deck<Card>
 {
 public:
+	Card* getNext() override;
+	static CardDeck & make_CardDeck();
+
+private:
 	CardDeck();
-	~CardDeck();
-	void shuffle();
 };
 
